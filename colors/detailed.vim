@@ -520,7 +520,7 @@ hi Ignore         ctermfg=0 guifg=bg
 hi Error          term=reverse ctermfg=15 ctermbg=none guifg=White guibg=Red
 hi Todo           term=standout ctermfg=0 ctermbg=none guifg=Blue guibg=Yellow
 
-call s:fg('Comment', 'gray237') " In my books, comments should be quiet.
+call s:fg('Comment', 'gray234') " In my books, comments should be quiet.
 " }}}
 
 " Generic links {{{

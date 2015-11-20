@@ -477,14 +477,15 @@ endfun
 
 " For now, force darkness. If you're a big fan of white bg's, let me know, and
 " we can collaborate on a solution.
-set bg=dark
-call s:fgbg('Normal', 'gray254', 'gray232')
+" set bg=dark
+" call s:fgbg('Normal', 'gray254', 'gray232')
 
 " Basic/Default-like Palette {{{
+hi Normal         ctermbg=none
 hi SpecialKey     term=bold ctermfg=81 guifg=Cyan
 hi NonText        term=bold ctermfg=12 gui=bold guifg=Blue
 hi Directory      term=bold ctermfg=159 guifg=Cyan
-hi ErrorMsg       term=standout ctermfg=15 ctermbg=1 guifg=White guibg=Red
+hi ErrorMsg       term=standout ctermfg=15 ctermbg=none guifg=White guibg=Red
 hi IncSearch      term=reverse cterm=reverse gui=reverse
 hi MoreMsg        term=bold ctermfg=121 gui=bold guifg=SeaGreen
 hi ModeMsg        term=bold cterm=bold gui=bold
@@ -496,16 +497,16 @@ hi StatusLineNC   term=reverse cterm=reverse gui=reverse
 hi VertSplit      term=reverse cterm=reverse gui=reverse
 hi Title          term=bold ctermfg=225 gui=bold guifg=Magenta
 hi WarningMsg     term=standout ctermfg=224 guifg=Red
-hi WildMenu       term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
-hi FoldColumn     term=standout ctermfg=14 ctermbg=242 guifg=Cyan guibg=Grey
-hi SpellBad       term=reverse ctermbg=9 gui=undercurl guisp=Red
-hi SpellCap       term=reverse ctermbg=12 gui=undercurl guisp=Blue
-hi SpellRare      term=reverse ctermbg=13 gui=undercurl guisp=Magenta
-hi SpellLocal     term=underline ctermbg=14 gui=undercurl guisp=Cyan
-hi TabLine        term=underline cterm=underline ctermfg=15 ctermbg=242 gui=underline guibg=DarkGrey
+hi WildMenu       term=standout ctermfg=0 ctermbg=none guifg=Black guibg=Yellow
+hi FoldColumn     term=standout ctermfg=14 ctermbg=none guifg=Cyan guibg=Grey
+hi SpellBad       term=reverse ctermbg=none gui=undercurl guisp=Red
+hi SpellCap       term=reverse ctermbg=none gui=undercurl guisp=Blue
+hi SpellRare      term=reverse ctermbg=none gui=undercurl guisp=Magenta
+hi SpellLocal     term=underline ctermbg=none gui=undercurl guisp=Cyan
+hi TabLine        term=underline cterm=underline ctermfg=15 ctermbg=none gui=underline guibg=DarkGrey
 hi TabLineSel     term=bold cterm=bold gui=bold
 hi TabLineFill    term=reverse cterm=reverse gui=reverse
-hi CursorColumn   term=reverse ctermbg=242 guibg=Grey40
+hi CursorColumn   term=reverse ctermbg=none guibg=Grey40
 hi Constant       term=underline ctermfg=13 guifg=#ffa0a0
 hi Special        term=bold ctermfg=224 guifg=Orange
 hi Identifier     term=underline cterm=bold ctermfg=14 guifg=#40ffff
@@ -514,8 +515,8 @@ hi PreProc        term=underline ctermfg=81 guifg=#ff80ff
 hi Type           term=underline ctermfg=121 gui=bold guifg=#60ff60
 hi Underlined     term=underline cterm=underline ctermfg=81 gui=underline guifg=#80a0ff
 hi Ignore         ctermfg=0 guifg=bg
-hi Error          term=reverse ctermfg=15 ctermbg=9 guifg=White guibg=Red
-hi Todo           term=standout ctermfg=0 ctermbg=11 guifg=Blue guibg=Yellow
+hi Error          term=reverse ctermfg=15 ctermbg=none guifg=White guibg=Red
+hi Todo           term=standout ctermfg=0 ctermbg=none guifg=Blue guibg=Yellow
 
 call s:fg('Comment', 'gray242') " In my books, comments should be quiet.
 " }}}

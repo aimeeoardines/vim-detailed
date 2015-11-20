@@ -520,7 +520,7 @@ hi Ignore         ctermfg=0 guifg=bg
 hi Error          term=reverse ctermfg=15 ctermbg=none guifg=White guibg=Red
 hi Todo           term=standout ctermfg=0 ctermbg=none guifg=Blue guibg=Yellow
 
-call s:fg('Comment', 'Black') " In my books, comments should be quiet.
+call s:fg('Comment', 'gray16') " In my books, comments should be quiet.
 " }}}
 
 " Generic links {{{
@@ -601,8 +601,8 @@ fun! s:detailed_colors()
   call s:fg('detailedInstanceVariable', 'blue75')
 
   call s:fgbg('detailedString', 'purple125', 'none')
-  call s:fgbg('detailedInterpolatedString', 'purple126', 'gray244')
-  call s:bold_fgbg('detailedExecutedString', 'green34', 'gray244')
+  call s:fgbg('detailedInterpolatedString', 'purple126', 'none')
+  call s:bold_fgbg('detailedExecutedString', 'green34', 'none')
   call s:fgbg('detailedRawString', 'red160', 'gray244')
   call s:fg('detailedStringDelimiter', 'blue33')
   call s:fg('detailedInterpolationDelimiter', 'gray244')

@@ -599,9 +599,9 @@ fun! s:detailed_colors()
   call s:fg('detailedInstanceVariable', 'blue75')
 
   call s:fgbg('detailedString', 'purple125', 'none')
-  call s:fgbg('detailedInterpolatedString', 'purple126', 'none')
-  call s:bold_fgbg('detailedExecutedString', 'green34', 'none')
-  call s:fgbg('detailedRawString', 'red160', 'none')
+  call s:fgbg('detailedInterpolatedString', 'purple126', 'gray244')
+  call s:bold_fgbg('detailedExecutedString', 'green34', 'gray244')
+  call s:fgbg('detailedRawString', 'red160', 'gray244')
   call s:fg('detailedStringDelimiter', 'blue33')
   call s:fg('detailedInterpolationDelimiter', 'gray244')
 
